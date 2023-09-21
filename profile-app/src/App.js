@@ -5,8 +5,25 @@ import Image from './myPhoto.jpg'
 import Printer from './Group 36.png'
 import Coffe from './coffe.png'
 import Music from './music.png'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Slider from 'react-slick';
+import app1_1 from './scheduling-capture/1.png'
+import app1_2 from './scheduling-capture/2.png'
+import app1_3 from './scheduling-capture/3.png'
+import app1_4 from './scheduling-capture/4.png'
+import app1_5 from './scheduling-capture/5.png'
+import app1_6 from './scheduling-capture/6.png'
+import app1_7 from './scheduling-capture/7.png'
 
 function App() {
+  const settings = {
+    dots: true,
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  }
   return (
     <div className="App">
       <div className='navbar-mobile'>
@@ -94,6 +111,74 @@ function App() {
           <p>
             An application that generates schedules with features such as authentication and utilizes genetic algorithms to create well-structured and organized timetables. The application also includes CRUD operations for managing data related to professors, courses, instructors, rooms, time slots, and unavailable time for professors. The main highlight of the application is the schedule generation feature, which intelligently generates optimal schedules based on various constraints and preferences. Additionally, the application provides an easy-to-use interface with a matrix-based table view, allowing users to visualize and access schedules from the perspectives of professors and rooms. This comprehensive application aims to streamline the scheduling process and enhance efficiency in academic institutions.
           </p>
+          <div className='projectImg'>
+            <Slider {...settings}>
+              <div>
+                <img src={app1_1}/>
+              </div>
+              <div>
+                <img src={app1_2}/>
+              </div>
+              <div>
+                <img src={app1_3}/>
+              </div>
+              <div>
+                <img src={app1_4}/>
+              </div>
+              <div>
+                <img src={app1_5}/>
+              </div>
+              <div>
+                <img src={app1_6}/>
+              </div>
+              <div>
+                <img src={app1_7}/>
+              </div>
+              {/* <img src={app1_2}/>
+              <img src={app1_3}/>
+              <img src={app1_4}/>
+              <img src={app1_5}/>
+              <img src={app1_6}/>
+              <img src={app1_7}/> */}
+            </Slider>
+          </div>
+        </div>
+        <div className='project'>
+          <h1>2.) An application For Cashier Payment with Role Division.</h1>
+          <p>
+            The Cashier Payment Application offers three roles: Admin, Cashier, and Manager. The Admin role is responsible for managing data operations such as creating, reading, updating, and deleting data. The Cashier role handles transaction-related tasks, facilitating smooth payment processes. Lastly, the Manager role is granted access to view all transaction data and generate statistical reports, providing insights into sales performance and trends. This role division ensures efficient management of the payment system, with each role having distinct responsibilities tailored to their specific functions.
+          </p>
+          <div className='projectImg'>
+            <Slider {...settings}>
+              <div>
+                <img src={app1_1}/>
+              </div>
+              <div>
+                <img src={app1_2}/>
+              </div>
+              <div>
+                <img src={app1_3}/>
+              </div>
+              <div>
+                <img src={app1_4}/>
+              </div>
+              <div>
+                <img src={app1_5}/>
+              </div>
+              <div>
+                <img src={app1_6}/>
+              </div>
+              <div>
+                <img src={app1_7}/>
+              </div>
+              {/* <img src={app1_2}/>
+              <img src={app1_3}/>
+              <img src={app1_4}/>
+              <img src={app1_5}/>
+              <img src={app1_6}/>
+              <img src={app1_7}/> */}
+            </Slider>
+          </div>
         </div>
       </div>   
     </div>
